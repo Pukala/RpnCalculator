@@ -8,7 +8,7 @@ static std::map<std::string, double (*)(double, double)> ops{
 
 const bool RpnCalculator::isNotOperator(const char ch)
 {
-    return (ch != '+' and ch != '-' and ch != '*' and ch != '\\');
+    return (ch != '+' and ch != '-' and ch != '*' and ch != '/');
 }
 
 std::vector<std::string> RpnCalculator::parseOperation(const std::string &operation)
